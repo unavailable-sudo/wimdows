@@ -23,12 +23,23 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button3")
+                .setDirtyMark(true)
                 .setLeft("22.857142857142858em")
                 .setTop("16em")
                 .setWidth("10.59047619047619em")
                 .setHeight("7.390476190476191em")
                 .setCaption("Start Wimdows")
                 .setFontSize("22px")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.dock",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
             );
             
             return children;
