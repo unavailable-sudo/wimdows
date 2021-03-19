@@ -9,31 +9,31 @@ xui.Class('App.Dock', 'xui.Module',{
                 .setHost(host,"ctl_layout5")
                 .setItems([
                     {
-                        "id" : "before",
-                        "pos" : "before",
-                        "size" : 80,
-                        "min" : 10,
-                        "locked" : false,
-                        "folded" : false,
-                        "hidden" : true,
-                        "cmd" : true,
-                        "itemDisplay" : "display:none;"
+                        "id":"before",
+                        "pos":"before",
+                        "size":80,
+                        "min":10,
+                        "locked":false,
+                        "folded":false,
+                        "hidden":true,
+                        "cmd":true,
+                        "itemDisplay":"display:none;"
                     },
                     {
-                        "id" : "main",
-                        "min" : 10,
-                        "size" : 650
+                        "id":"main",
+                        "min":10,
+                        "size":650
                     },
                     {
-                        "id" : "after",
-                        "pos" : "after",
-                        "size" : 150,
-                        "min" : 70,
-                        "max" : 400,
-                        "locked" : false,
-                        "folded" : false,
-                        "hidden" : false,
-                        "cmd" : true
+                        "id":"after",
+                        "pos":"after",
+                        "size":150,
+                        "min":70,
+                        "max":400,
+                        "locked":false,
+                        "folded":false,
+                        "hidden":false,
+                        "cmd":true
                     }
                 ])
             );
@@ -51,15 +51,15 @@ xui.Class('App.Dock', 'xui.Module',{
                 .setImageClass("fa fa-lg fa-bars")
                 .onClick([
                     {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "msg",
-                        "args" : [
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
                             "Wimdows: Start",
                             "The Start Button isn't finished yet.\nI will do that later."
                         ],
-                        "method" : "pop",
-                        "event" : 1
+                        "method":"pop",
+                        "event":1
                     },
                     "_xui_ui_button6_onclick"
                 ])
