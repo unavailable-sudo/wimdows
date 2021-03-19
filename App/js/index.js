@@ -32,13 +32,14 @@ xui.Class('App', 'xui.Module',{
                 .setFontSize("22px")
                 .onClick([
                     {
-                        "desc" : "Action 1",
-                        "type" : "page",
-                        "target" : "App.dock",
-                        "args" : [true],
-                        "method" : "switch",
-                        "event" : 1
-                    }
+                        "desc":"Action 1",
+                        "type":"page",
+                        "target":"App.Dock",
+                        "args":[true],
+                        "method":"switch",
+                        "event":1
+                    },
+                    "_xui_ui_button3_onclick"
                 ])
             );
             
@@ -50,6 +51,17 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
+        },
+        /**
+         * Fired when user click it
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+         * @param {} value  Object
+        */
+        _xui_ui_button3_onclick:function(profile, e, src, value){
+            var ns = this, uictrl = profile.boxing();
         }
         /*,
         // To determine how properties affects this module
