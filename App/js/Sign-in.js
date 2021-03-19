@@ -6,11 +6,12 @@ xui.Class('App.ColumnsNone15', 'xui.Module',{
             
             append(
                 xui.create("xui.UI.Div")
-                .setHost(host,"ctl_pane10")
+                .setHost(host,"Sign-in")
+                .setName("Sign-in")
                 .setDock("fill")
             );
             
-            host.ctl_pane10.append(
+            host.Sign-in.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input18")
                 .setLeft("22.095238095238095em")
