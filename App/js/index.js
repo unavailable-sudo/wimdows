@@ -32,9 +32,9 @@ xui.Class('App', 'xui.Module',{
                 .setFontSize("22px")
                 .onClick([
                     {
-                        "desc":"Action 1",
+                        "desc":"SIGN-IN",
                         "type":"page",
-                        "target":"App.Dock",
+                        "target":"App.Sign-in",
                         "args":[true],
                         "method":"switch",
                         "event":1
